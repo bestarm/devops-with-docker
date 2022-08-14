@@ -1,0 +1,4 @@
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS                      PORTS       NAMES
+06df12947ee7   mariadb   "docker-entrypoint.s…"   3 minutes ago    Exited (1) 3 minutes ago                flamboyant_aryabhata
+e742365d8f61   mongo     "docker-entrypoint.s…"   16 minutes ago   Up 16 minutes               27017/tcp   strange_wilson
+cb226f3cfc6e   nginx     "/docker-entrypoint.…"   24 minutes ago   Exited (0) 37 seconds ago               vibrant_goodall
