@@ -1,0 +1,7 @@
+$ docker run -it --name looper ubuntu
+// installing curl
+$ apt update
+$ apt upgrade
+$ apt install curl
+// run this command then enter helsinki.fi
+$ sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'

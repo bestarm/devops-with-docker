@@ -1,0 +1,7 @@
+$ docker run -it devopsdockeruh/simple-web-service:alpine
+$ docker exec -it 13ef8c8a5dd2 sh
+$ tail -f ./text.log
+
+// compare the image sizes
+devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   17 months ago   83MB
+devopsdockeruh/simple-web-service   alpine    fd312adc88e0   17 months ago   15.7MB
