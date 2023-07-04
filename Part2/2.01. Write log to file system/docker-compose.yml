@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+
+    write-log-service:
+      image: devopsdockeruh/simple-web-service:ubuntu
+      volumes:
+        - /home/thanhcong/Training/Docker/text.log:/usr/src/text.log
+      container_name: write-log-file-system
