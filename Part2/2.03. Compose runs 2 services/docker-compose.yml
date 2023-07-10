@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      dockerfile: frontend.Dockerfile
+    ports:
+        - 1234:5000
+  backend:
+    build:
+      dockerfile: backend.Dockerfile
+    ports:
+        - 1235:8080
+
