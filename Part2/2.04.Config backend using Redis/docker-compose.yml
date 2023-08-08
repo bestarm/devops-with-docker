@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  frontend:
+    image: material-applications_frontend
+    ports:
+        - "1234:5000"
+  backend:
+    image: material-applications_backend
+    ports:
+        - "1235:8080"
+    environment:
+      - REDIS_HOST=redis
+  redis:
+    image: redis
+
+
