@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  frontend:
+    image: material-applications_frontend
+    ports:
+        - "1234:5000"
+  backend:
+    image: material-applications_backend
+    ports:
+        - "1235:8080"
+    environment:
+      - REDIS_HOST=redis
+      - POSTGRES_HOST=db
+      - POSTGRES_USER=postgres01
+      - POSTGRES_PASSWORD=postgres321
+      - POSTGRES_DATABASE=postgres01
+    depends_on:
+      - db
+  redis:
+    image: redis
+  db:
+    image: postgres
+    restart: unless-stopped
+    environment:
+      - POSTGRES_PASSWORD=postgres321
+      - POSTGRES_USER=postgres01
+
+
